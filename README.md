@@ -50,3 +50,18 @@ Useful for grouping tests, or for skipping tests based on the environment.
 npx playwright test --grep @Canada
 ```
 This will run all tests that have the annotation `@Canada` in the test function name
+
+### Fixtures?
+
+[Fixtures are a way to create reusable code that can be used across multiple tests.]()
+
+### Debugging & Trace
+```
+npx playwright test --ui
+```
+This will open the UI for the test runner which is great for debugging
+
+```
+npx playwright test --project --trace on
+npx playwright test show-report
+```
