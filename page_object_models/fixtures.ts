@@ -11,16 +11,13 @@ type MyFixtures = {
 
 export const test = base.extend<MyFixtures>({
   landingPageModel: async ({ page }, use) => {
-    const landingPageModel = new LandingPageModel(page);
-    await use(landingPageModel);
+    await use( new LandingPageModel(page));
   },
   aboutPageModel: async ({ page }, use) => {
-    const aboutPageModel = new AboutPageModel(page);
-    await use(aboutPageModel);
+    await use(new AboutPageModel(page));
   },
   smogonHomeModel: async ({ page }, use) => {
-    const smogonHomeModel = new SmogonHomeModel(page);
-    await use(smogonHomeModel);
+    await use(new SmogonHomeModel(page));
   },
 });
 
