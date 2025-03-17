@@ -12,3 +12,10 @@ Prompts:
 yes, TypeScript, tests, false, yes
 
 Install VS Code Extension For Testing
+
+If cloning:
+```
+npm i --save-dev @playwright/test;
+npx playwright install;
+npm install;
+```
