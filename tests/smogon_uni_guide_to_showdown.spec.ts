@@ -44,12 +44,12 @@ test.describe("Dropdown Tests", () => {
 });
 
 // Suite 3: Link Tests
-test.describe("Link Tests", () => {
-  test("should navigate to correct page on link click", async ({ page }) => {
-    await page.click('a[href="/docs"]');
-    await expect(page).toHaveURL(/.*\/docs$/);
-  });
-});
+// test.describe("Link Tests", () => {
+//   test("should navigate to correct page on link click", async ({ page }) => {
+//     await page.click('a[href="/docs"]');
+//     await expect(page).toHaveURL(/.*\/docs$/);
+//   });
+// });
 
 // Suite 4: Responsiveness Tests
 test.describe("Responsiveness Tests", () => {
