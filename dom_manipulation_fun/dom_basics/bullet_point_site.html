@@ -92,6 +92,23 @@
         listItems[i].style.backgroundColor = 'red';
       }
     }
+
+    // Get Element By Tag Name Example ================================================================================
+    //Make all the UL text color gold
+    // Remove text decoration from all list items
+
+    const uls = document.getElementsByTagName('li');
+    for (let i = 0; i < uls.length; i++) {
+      uls[i].style.color = 'gold';
+    }
+
+    // Query Selector Example ================================================================================
+    //Make all the UL text color Green
+    document.querySelectorAll('li').forEach(function(li) {
+      li.style.color = 'green';
+    });
+
+    
   </script>
 
 </body>
