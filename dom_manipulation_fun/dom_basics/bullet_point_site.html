@@ -53,7 +53,7 @@
     
       <h2>Changes &amp; Updates to this template</h2>
     
-      <ul id="list">
+      <ul id="list" class="list-item">
         <li>CSS and XHTML was cleaned up with an emphasis on accessability</li>
         <li>The design will display properly in handheld devices</li>
         <li>A stylesheet has been added for the print media</li>
@@ -68,22 +68,30 @@
 
   
   <script>
+    // Element By ID Example ================================================================================
     //remove last all list items
-    var listItems = document.getElementById('list').children;
+    //var listItems = document.getElementById('list').children;
     //while (listItems.length > 0) {
     //  listItems[0].remove();
     //}
-    
     //Setting arr to empty works too but not with DOM manipulation
-    listItems.length = 0;
-
-
+    //listItems.length = 0;
     // Create a new list item element
     const newListItem = document.createElement('li');
     // Set the text content of the new list item
     newListItem.textContent = 'THIS WAS ADDED WITH JS!';
     // Append the new list item to the list with id 'list'      
     document.getElementById('list').appendChild(newListItem);
+
+    // Element By Class Example ================================================================================
+    // Select all li elements within the ul with id 'list'
+    const listItems = document.querySelectorAll('#list li');
+    // Iterate over the array and change the background color of every other item starting from the first
+    for (let i = 0; i < listItems.length; i++) {
+      if (i % 2 !== 0) { // Change to `i % 2 === 0` to start with the first item
+        listItems[i].style.backgroundColor = 'red';
+      }
+    }
   </script>
 
 </body>
