@@ -25,6 +25,9 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </div>
+  <div>
+    <button id="myButton">Click me</button>
+  </div>
 
   <div class="">
     <div class="" id="">
@@ -108,7 +111,13 @@
       li.style.color = 'green';
     });
 
-    
+    // Event Listener Example ================================================================================
+    // Add a click event listener to the button
+    document.querySelector('#myButton').addEventListener('click', function() {
+      alert('Button clicked!');
+    });
+
+
   </script>
 
 </body>
