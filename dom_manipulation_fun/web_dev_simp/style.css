@@ -1,0 +1,6 @@
+/* Add this to your CSS file */
+.highlight {
+    background-color: yellow; /* Change the background color to yellow */
+    color: black; /* Change the text color to black */
+    font-weight: bold; /* Make the text bold */
+}
